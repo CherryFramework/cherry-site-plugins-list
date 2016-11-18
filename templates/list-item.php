@@ -18,7 +18,7 @@ do_action( 'cherry_site_plugins_before_item', 'list-item' );
 	<div class="plugins-list-item__rating" data-rating="<?php echo $plugin->rating; ?>"></div>
 	<div class="plugins-list-item__downloads"><?php echo $plugin->downloaded; ?></div>
 	<div class="plugins-list-item__actions">
-		<a href=""<?php echo $plugin->download_link; ?> class="plugins-list-item__link"><?php
+		<a href="<?php echo $plugin->download_link; ?>" class="plugins-list-item__link"><?php
 			echo esc_html( $atts['download_text'] );
 		?></a>
 	</div>

@@ -105,10 +105,6 @@ if ( ! class_exists( 'Cherry_Site_Plugins_List_Shortcode' ) ) {
 
 			$ext = '.png';
 
-			if ( 'cherry-sidebars' == $plugin->slug ) {
-				$ext = '.jpg';
-			}
-
 			$url = '//ps.w.org/' . $plugin->slug . '/assets/' . $size . $ext;
 
 			return sprintf( $format, $url, esc_attr( $plugin->name ), esc_attr( $class ) );
